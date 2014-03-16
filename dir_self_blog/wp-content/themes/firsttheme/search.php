@@ -46,14 +46,14 @@
 <?php else : ?>
 
 			<div id="post-0" class="post no-results not-found">
-				<h2 class="entry-title"><?php _e( 'Nothing Found', 'sandbox' ) ?></h2>
+				<h2 class="entry-title"><?php _e( '没有附和的内容', 'sandbox' ) ?></h2>
 				<div class="entry-content">
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'sandbox' ) ?></p>
+					<p><?php _e( '抱歉没有搜索到任何内容，请尝试其它搜索内容。', 'sandbox' ) ?></p>
 				</div>
 				<form id="searchform-no-results" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
 					<div>
 						<input id="s-no-results" name="s" class="text" type="text" value="<?php the_search_query() ?>" size="40" />
-						<input class="button" type="submit" value="<?php _e( 'Find', 'sandbox' ) ?>" />
+						<input class="button" type="submit" value="<?php _e( '搜索', 'sandbox' ) ?>" />
 					</div>
 				</form>
 			</div><!-- .post -->

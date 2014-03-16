@@ -9,6 +9,16 @@
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?474323131bc2ebdf7a5f3bc107d3cda8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </head>
 
 <body class="<?php sandbox_body_class() ?>">
@@ -19,7 +29,7 @@
     <div id="header-fading"></div>
     <div id="header-bg"></div>
     <div id="header-content">
-        <div id="blog-title"> <img src="<?php bloginfo('template_url') ?>/content/images/blog-title.png"/></div>
+	    <div id="blog-title"> <a title="<?php _e('首页') ?>" href="<?php bloginfo('home'); ?>/"><img src="<?php bloginfo('template_url') ?>/content/images/blog-title.png"/></a></div>
 	<div id="access">
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container_id' => "menu" ) ); ?>
 	</div><!-- #access -->

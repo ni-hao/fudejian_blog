@@ -3,7 +3,7 @@
   <div id="footer">
     <div id="footer-fading"></div>
     <div id="footer-bg"></div>
-    <div id="footer-content"> Copyright © 2013 <a title="fudejian" href="http://www.fudejian.com">fudejian.com</a>. All Rights Reserved.</div>
+    <div id="footer-content"> Copyright © 2013 <a title="fudejian" href="<?php bloginfo('home'); ?>/">fudejian.com</a>. All Rights Reserved.</div>
   </div><!-- #footer -->
 
 </div><!-- #wrapper .hfeed -->

@@ -618,4 +618,33 @@ add_filter('smilies_src','my_custom_smilies_src', 1, 10);
 function my_custom_smilies_src($img_src, $img, $siteurl){
     return get_bloginfo('template_url').'/smilies/'.$img;
 }
+
+add_filter('mce_buttons_3','my_buttons');
+function my_buttons($buttons){
+	$mces=array(
+		'cut',
+		'copy',
+		'paste',
+		'image',
+		'code',
+		'hr',
+		'fontselect',
+		'fontsizeselect',
+		'styleselect',
+		'sub',
+		'sup',
+		'backcolor',
+		'visualaid',
+		'anchor',
+		'newdocument',
+	);
+	foreach($mces as $mce){
+		$buttons[]=$mce;
+	}
+	return $buttons;
+}
+
+
+add_theme_support( 'post-thumbnails' ); 
+
 ?>

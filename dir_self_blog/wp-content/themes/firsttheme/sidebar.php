@@ -1,11 +1,21 @@
 	
 <div id="custom-sidebar" class="sidebar">
     <ul class="xoxo">
-      <li id="holder-summary">
+      <li id="holder-summary" style="display:none;">
         <h3>你好,</h3>
         <div id="summary-bg"> <img class="self-image" src="<?php bloginfo('template_url') ?>/content/images/boyAndHisGirl.jpg" width="145" height="235" alt="self" />
-          <div id="summary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis purus nec nibh pellentesque in ullamcorper magna blandit. Quisque dictum convallis dui, sit amet venenatis urna dictum facilisis. Nam a dui sagittis eros ullamcorper tincidunt. Duis et dui eget sem fringilla dictum quis sed tellus. Praesent fermentum turpis accumsan elit egestas ut dictum velit ultrices. In at risus nulla. Donec varius mollis massa. Donec at nisl sed tortor cursus molestie sit amet at diam.</div>
         </div>
+      </li>
+      <li id="contact-us" class="sidebar-item">
+        <h3><?php _e('联系我') ?></h3>
+	<ul>
+		<li id="sina-weibo">
+		<a  target="_blank"href="http://weibo.com/u/2372953117" title="FUDEJIAN新浪微博">FUDEJIAN新浪微博</a>	
+		</li>	
+		<li id="renren-probile">
+		<a target="_blank" href="http://www.renren.com/229811691/profile" title="FUDEJIAN人人">FUDEJIAN人人
+		</li>	
+	</ul>
       </li>
     </ul>
   </div>
@@ -13,6 +23,11 @@
   
 <div id="primary" class="sidebar">
 		<ul class="xoxo">
+			<li style="display:none;" id="love-fudejian">
+				<h3><?php _e('喜欢FUDEJIAN？') ?></h3>
+				<ul>
+				</ul>
+			</li>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 			<li id="pages">
 				<h3><?php _e( 'Pages', 'sandbox' ) ?></h3>
